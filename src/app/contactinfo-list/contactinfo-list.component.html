@@ -1,0 +1,56 @@
+
+
+<h2>ContactInfo List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>phone</th>
+    <th>fax</th>
+    <th>address</th>
+    <th>email</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action</th>
+
+
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let contactinfo of contactinfo">
+    <td>{{contactinfo.phone}}</td>
+    <td>{{contactinfo.fax}}</td>
+    <td>{{contactinfo.address}}</td>
+    <td>{{contactinfo.email}}</td>
+    <td>{{contactinfo.utilisateur}}</td>
+    <td>{{contactinfo.operation}}</td>
+    <td>{{contactinfo.isSelected}}</td>
+    <td>{{contactinfo.isDeleted}}</td>
+    <td>{{contactinfo.createdDate}}</td>
+    <td>{{contactinfo.createdBy}}</td>
+    <td>{{contactinfo.updatedDate}}</td>
+    <td>{{contactinfo.updatedBy}}</td>
+    <td>{{contactinfo.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addcontactinfo']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+      <a mat-icon-button color="primary" (click) = "updateConinfo(contactinfo.id)">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a mat-icon-button color="warn" (click) = "deleteConinfo(contactinfo.id)" >
+        <mat-icon>delete</mat-icon>
+      </a>
+
+
+    </td>
+
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,58 @@
+<h2>References List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>nomAr</th>
+    <th>nomFr</th>
+    <th>nomAn</th>
+    <th>image</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>action</th>
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let references of references">
+    <td>{{references.nomAr}}</td>
+    <td>{{references.nomFr}}</td>
+    <td>{{references.nomAn}}</td>
+    <td>{{references.image}}</td>
+    <td>{{references.utilisateur}}</td>
+    <td>{{references.operation}}</td>
+    <td>{{references.isSelected}}</td>
+    <td>{{references.isDeleted}}</td>
+    <td>{{references.createdDate}}</td>
+    <td>{{references.createdBy}}</td>
+    <td>{{references.updatedDate}}</td>
+    <td>{{references.updatedBy}}</td>
+    <td>{{references.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addreferences']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+      <a mat-icon-button color="primary" (click) = "updateRef(references.id)">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a mat-icon-button color="warn" (click) = "deleteRef(references.id)" >
+        <mat-icon>delete</mat-icon>
+      </a>
+
+
+    </td>
+
+
+
+
+
+
+  </tr>
+  </tbody>
+</table>
+

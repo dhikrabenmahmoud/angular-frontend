@@ -1,0 +1,62 @@
+
+
+<h2>About Us List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>libAr</th>
+    <th>libFr</th>
+    <th>libAn</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action</th>
+
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let aboutus of aboutus">
+    <td>{{aboutus.libAr}}</td>
+    <td>{{aboutus.libFr}}</td>
+    <td>{{aboutus.libAn}}</td>
+    <td>{{aboutus.utilisateur}}</td>
+    <td>{{aboutus.operation}}</td>
+    <td>{{aboutus.isSelected}}</td>
+    <td>{{aboutus.isDeleted}}</td>
+    <td>{{aboutus.createdDate}}</td>
+    <td>{{aboutus.createdBy}}</td>
+    <td>{{aboutus.updatedDate}}</td>
+    <td>{{aboutus.updatedBy}}</td>
+     <td>{{aboutus.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addaboutus']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+       <a mat-icon-button color="primary" (click) = "updateAboutUs(aboutus.id)">
+         <mat-icon>edit</mat-icon>
+       </a>
+        <a mat-icon-button color="warn" (click) = "deleteAboutUs(aboutus.id)" >
+          <mat-icon>delete</mat-icon>
+        </a>
+
+      </td>
+
+
+
+
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
+

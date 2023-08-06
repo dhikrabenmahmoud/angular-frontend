@@ -1,0 +1,55 @@
+
+
+<h2>ContactUs List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>fullName</th>
+    <th>email</th>
+    <th>phone</th>
+    <th>description</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action</th>
+
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let contactus of contactus">
+    <td>{{contactus.fullName}}</td>
+    <td>{{contactus.email}}</td>
+    <td>{{contactus.phone}}</td>
+    <td>{{contactus.description}}</td>
+    <td>{{contactus.utilisateur}}</td>
+    <td>{{contactus.operation}}</td>
+    <td>{{contactus.isSelected}}</td>
+    <td>{{contactus.isDeleted}}</td>
+    <td>{{contactus.createdDate}}</td>
+    <td>{{contactus.createdBy}}</td>
+    <td>{{contactus.updatedDate}}</td>
+    <td>{{contactus.updatedBy}}</td>
+    <td>{{contactus.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addcontactus']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+      <a mat-icon-button color="primary" (click) = "updateConUs(contactus.id)">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a mat-icon-button color="warn" (click) = "deleteConUs(contactus.id)" >
+        <mat-icon>delete</mat-icon>
+      </a>
+
+
+    </td>
+
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Update References </h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label> nomAr </label>
+      <input type="text" class ="form-control" id = "nomAr"
+             [(ngModel)] = "references.nomAr" name = "nomAr">
+    </div>
+
+    <div class="form-group">
+      <label> nomFr</label>
+      <input type="text" class ="form-control" id = "nomFr"
+             [(ngModel)] = "references.nomFr" name = "nomFr">
+    </div>
+
+    <div class="form-group">
+      <label> nomAn</label>
+      <input type="text" class ="form-control" id = "nomAn"
+             [(ngModel)] = "references.nomAn" name = "nomAn">
+    </div>
+
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input type="file" class="form-control" id="image" (change)="onFileSelected($event)" accept="image/*">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+  </form>
+</div>

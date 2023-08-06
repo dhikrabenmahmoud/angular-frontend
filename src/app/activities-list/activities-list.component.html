@@ -1,0 +1,65 @@
+
+
+<h2>ActivityList</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>code</th>
+    <th>libAr</th>
+    <th>libFr</th>
+    <th>libAn</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action </th>
+
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let activities of activities">
+    <td>{{activities.code}}</td>
+    <td>{{activities.libAr}}</td>
+    <td>{{activities.libFr}}</td>
+    <td>{{activities.libAn}}</td>
+    <td>{{activities.utilisateur}}</td>
+    <td>{{activities.operation}}</td>
+    <td>{{activities.isSelected}}</td>
+    <td>{{activities.isDeleted}}</td>
+    <td>{{activities.createdDate}}</td>
+    <td>{{activities.createdBy}}</td>
+    <td>{{activities.updatedDate}}</td>
+    <td>{{activities.updatedBy}}</td>
+   <td>{{activities.action}}
+         <a mat-icon-button color="warn" [routerLink]="['/addActivity']">
+          <mat-icon>add_box</mat-icon>
+        </a>
+
+     <a mat-icon-button color="primary" (click) = "updateActivity(activities.id)">
+      <mat-icon>edit</mat-icon>
+    </a>
+     <a mat-icon-button color="warn" (click) = "deleteActiviyy(activities.id)" >
+      <mat-icon>delete</mat-icon>
+    </a>
+
+  </td>
+
+
+
+
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
+

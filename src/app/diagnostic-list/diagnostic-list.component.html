@@ -1,0 +1,64 @@
+
+
+<h2>Diagnostic List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>titre</th>
+    <th>libAr</th>
+    <th>libFr</th>
+    <th>libAn</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action</th>
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let diagnostic of diagnostic">
+    <td>{{diagnostic.titre}}</td>
+    <td>{{diagnostic.libAr}}</td>
+    <td>{{diagnostic.libFr}}</td>
+    <td>{{diagnostic.libAn}}</td>
+    <td>{{diagnostic.utilisateur}}</td>
+    <td>{{diagnostic.operation}}</td>
+    <td>{{diagnostic.isSelected}}</td>
+    <td>{{diagnostic.isDeleted}}</td>
+    <td>{{diagnostic.createdDate}}</td>
+    <td>{{diagnostic.createdBy}}</td>
+    <td>{{diagnostic.updatedDate}}</td>
+    <td>{{diagnostic.updatedBy}}</td>
+    <td>{{diagnostic.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addDiagnostic']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+
+      <a mat-icon-button color="primary" (click) = "updateDiagnostic(diagnostic.id)">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a mat-icon-button color="warn" (click) = "deleteDiagnostic(diagnostic.id)" >
+        <mat-icon>delete</mat-icon>
+      </a>
+
+    </td>
+
+
+
+
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
+

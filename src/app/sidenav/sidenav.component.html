@@ -1,0 +1,36 @@
+<mat-nav-list>
+  <div class="logo py-4">
+    <img src="./assets/img.png" alt="Company Logo" />
+  </div>
+  <mat-divider></mat-divider>
+  <h2 matSubheader class="mt-2">APPLICATIONS</h2>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/acceuilList']">
+  <mat-icon>home</mat-icon>Acceuil
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/diagnosticList']">
+  <mat-icon>developer_board</mat-icon>Diagnostic
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/expertiseList']">
+  <mat-icon>book</mat-icon>Expertise
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/produitList']">
+    <mat-icon>shopping_cart</mat-icon> Product
+  </a>
+
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/referencesList']">
+    <mat-icon>dashboard</mat-icon> References
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/contactusList']">
+  <mat-icon> call</mat-icon> Contact Us
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/contactinfoList']">
+  <mat-icon> contact_phone</mat-icon> Contact Info
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/aboutusList']">
+    <mat-icon>view_carousel</mat-icon> About Us
+  </a>
+  <a mat-list-item routerLinkActive="list-item-active" [routerLink]="['/activityList']">
+  <mat-icon>rowing</mat-icon> Activities
+  </a>
+</mat-nav-list>

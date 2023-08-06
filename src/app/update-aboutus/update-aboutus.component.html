@@ -1,0 +1,26 @@
+<div class="col-md-6 offset-md-3">
+  <h3>  Update About Us </h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label> libAr </label>
+      <input type="text" class ="form-control" id = "libAr"
+             [(ngModel)] = "aboutus.libAr" name = "libAr">
+    </div>
+
+    <div class="form-group">
+      <label> libFr</label>
+      <input type="text" class ="form-control" id = "libFr"
+             [(ngModel)] = "aboutus.libFr" name = "libFr">
+    </div>
+
+    <div class="form-group">
+      <label> libAn</label>
+      <input type="text" class ="form-control" id = "libAn"
+             [(ngModel)] = "aboutus.libAn" name = "emailId">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+  </form>
+</div>
