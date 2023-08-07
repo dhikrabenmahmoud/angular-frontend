@@ -29,6 +29,9 @@ import {UpdateExpertiseComponent} from "./update-expertise/update-expertise.comp
 import {DiagnosticListComponent} from "./diagnostic-list/diagnostic-list.component";
 import {CreateDiagnosticComponent} from "./create-diagnostic/create-diagnostic.component";
 import {UpdateDiagnosticComponent} from "./update-diagnostic/update-diagnostic.component";
+import {StatistiqueListComponent} from "./statistique-list/statistique-list.component";
+import {CreateStatistiqueComponent} from "./create-statistique/create-statistique.component";
+import {UpdateStatistiqueComponent} from "./update-statistique/update-statistique.component";
 
 
 const routes: Routes = [
@@ -63,6 +66,9 @@ const routes: Routes = [
   {path: 'diagnosticList', component:  DiagnosticListComponent},
   {path: 'addDiagnostic', component:  CreateDiagnosticComponent},
   {path: 'updateDiagnostic/:id', component:  UpdateDiagnosticComponent},
+  {path: 'statistiqueList', component:  StatistiqueListComponent},
+  {path: 'addStatistique', component:  CreateStatistiqueComponent},
+  {path: 'updateStatistique/:id', component:  UpdateStatistiqueComponent},
 
 
 

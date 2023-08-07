@@ -1,0 +1,67 @@
+
+
+<h2>Statistique List</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>subInWorld</th>
+    <th>country</th>
+    <th>nbProject</th>
+    <th>customers</th>
+    <th>utilisateur</th>
+    <th>operation</th>
+    <th>isSelected</th>
+    <th>isDeleted</th>
+    <th>createdDate</th>
+    <th>createdBy</th>
+    <th>updatedDate</th>
+    <th>updatedBy</th>
+    <th>Action</th>
+
+
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let statistique of statistique">
+    <td>{{statistique.subInWorld}}</td>
+    <td>{{statistique.country}}</td>
+    <td>{{statistique.nbProject}}</td>
+    <td>{{statistique.customers}}</td>
+    <td>{{statistique.utilisateur}}</td>
+    <td>{{statistique.operation}}</td>
+    <td>{{statistique.isSelected}}</td>
+    <td>{{statistique.isDeleted}}</td>
+    <td>{{statistique.createdDate}}</td>
+    <td>{{statistique.createdBy}}</td>
+    <td>{{statistique.updatedDate}}</td>
+    <td>{{statistique.updatedBy}}</td>
+    <td>{{statistique.action}}
+      <a mat-icon-button color="warn" [routerLink]="['/addStatistique']">
+        <mat-icon>add_box</mat-icon>
+      </a>
+
+      <!--<a mat-icon-button color="primary" [routerLink]="['/updateProduct/:id']"  >
+        //<mat-icon>edit</mat-icon>
+      </a> -->
+      <a mat-icon-button color="primary" (click) = "updateStatistique(statistique.id)">
+        <mat-icon>edit</mat-icon>
+      </a>
+      <a mat-icon-button color="warn" (click) = "deleteStatistique(statistique.id)" >
+        <mat-icon>delete</mat-icon>
+      </a>
+
+    </td>
+
+
+
+
+
+  </tr>
+  </tbody>
+</table>
+
+
+
+
+
+

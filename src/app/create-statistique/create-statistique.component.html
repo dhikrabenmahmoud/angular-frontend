@@ -1,0 +1,31 @@
+<div class="col-md-6 offset-md-3">
+  <h3> Create Statistique </h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label> subInWorld </label>
+      <input type="text" class ="form-control" id = "subInWorld"
+             [(ngModel)] = "statistique.subInWorld" name = "subInWorld">
+    </div>
+
+    <div class="form-group">
+      <label> country</label>
+      <input type="text" class ="form-control" id = "country"
+             [(ngModel)] = "statistique.country" name = "country">
+    </div>
+
+    <div class="form-group">
+      <label> nbProject</label>
+      <input type="text" class ="form-control" id = "nbProject"
+             [(ngModel)] = "statistique.nbProject" name = "nbProject">
+    </div>
+    <div class="form-group">
+      <label> customers</label>
+      <input type="text" class ="form-control" id = "customers"
+             [(ngModel)] = "statistique.customers" name = "customers">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+  </form>
+</div>
