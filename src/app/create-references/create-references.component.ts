@@ -18,7 +18,6 @@ export class CreateReferencesComponent implements OnInit {
   ngOnInit(): void {
   }
   private saveReferences() {
-    this.references.image = this.selectedImage ;
     this.referencesService.createReferences(this.references).subscribe( data => {
       console.log(data);
         this.goToReferencesList();
@@ -30,13 +29,26 @@ export class CreateReferencesComponent implements OnInit {
     this.router.navigate(['/referencesList']);
   }
   onSubmit() {
-    console.log(this.references);
+    console.log("dhikra",this.references.image);
     this.saveReferences();
   }
 
   onFileSelected(event: any) {
-    this.selectedImage = event.target.files[0].name;
-    console.log(this.selectedImage);
+
+      if ( event.target.files[0]) {
+          var reader = new FileReader();
+          reader.readAsDataURL(event.target.files[0]);
+        // tslint:disable-next-line:no-shadowed-variable
+          reader.onload = (event: any) => {
+            console.log(event.target);
+            this.references.image = event.target.result;
+          }
+
+
+      }
+
+
+
   }
 
 

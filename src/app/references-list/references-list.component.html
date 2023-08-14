@@ -1,11 +1,17 @@
-<h2>References List</h2>
+
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <h2 class="text-success">References List</h2>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/addreferences']">Add</button>
+  </form>
+
+</nav>
 <table class="table table-striped">
   <thead>
   <tr>
     <th>nomAr</th>
     <th>nomFr</th>
     <th>nomAn</th>
-    <th>image</th>
     <th>utilisateur</th>
     <th>operation</th>
     <th>isSelected</th>
@@ -24,7 +30,6 @@
     <td>{{references.nomAr}}</td>
     <td>{{references.nomFr}}</td>
     <td>{{references.nomAn}}</td>
-    <td>{{references.image}}</td>
     <td>{{references.utilisateur}}</td>
     <td>{{references.operation}}</td>
     <td>{{references.isSelected}}</td>
@@ -34,9 +39,12 @@
     <td>{{references.updatedDate}}</td>
     <td>{{references.updatedBy}}</td>
     <td>{{references.action}}
-      <a mat-icon-button color="warn" [routerLink]="['/addreferences']">
-        <mat-icon>add_box</mat-icon>
+
+      <a mat-icon-button color="warn"  [routerLink]="['/detailsReference', references.id]">
+
+        <mat-icon>visibility</mat-icon>
       </a>
+
       <a mat-icon-button color="primary" (click) = "updateRef(references.id)">
         <mat-icon>edit</mat-icon>
       </a>

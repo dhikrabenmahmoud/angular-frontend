@@ -3,7 +3,7 @@ export class References {
   nomAr: string ;
   nomFr: string ;
   nomAn: string;
-  image: string;
+  image: any;
   utilisateur: string;
   operation: string;
   isSelected: number;
@@ -12,5 +12,6 @@ export class References {
   updatedDate: string;
   updatedBy: string;
   isDeleted: number;
+  contentType:string;
   action: string;
 }

@@ -46,6 +46,10 @@ import { UpdateDiagnosticComponent } from './update-diagnostic/update-diagnostic
 import { StatistiqueListComponent } from './statistique-list/statistique-list.component';
 import { CreateStatistiqueComponent } from './create-statistique/create-statistique.component';
 import { UpdateStatistiqueComponent } from './update-statistique/update-statistique.component';
+import { ActualitesListComponent } from './actualites-list/actualites-list.component';
+import { CreateActualitesComponent } from './create-actualites/create-actualites.component';
+import { UpdateActualitesComponent } from './update-actualites/update-actualites.component';
+import { DetailsReferenceComponent } from './details-reference/details-reference.component';
 
 
 
@@ -86,6 +90,11 @@ import { UpdateStatistiqueComponent } from './update-statistique/update-statisti
     StatistiqueListComponent,
     CreateStatistiqueComponent,
     UpdateStatistiqueComponent,
+    ActualitesListComponent,
+    CreateActualitesComponent,
+    UpdateActualitesComponent,
+    DetailsReferenceComponent,
+
 
 
   ],

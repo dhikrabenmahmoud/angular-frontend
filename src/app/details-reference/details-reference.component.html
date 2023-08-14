@@ -1,0 +1,18 @@
+<h3>View Reference Details</h3>
+<div *ngIf="reference">
+  <div>
+    <label><b>LibAr: </b></label> {{ reference.nomAr }}
+  </div>
+
+  <div>
+    <label><b>LibFr:</b></label> {{ reference.nomFr }}
+  </div>
+  <div>
+    <label><b>LibAn:</b></label> {{ reference.nomAn }}
+  </div>
+  <div>
+    <label><b>image:</b></label>
+    <img [src]="'data:image/png;base64,'+reference.image"  width="500" height="600" alt="Reference Image">
+  </div>
+</div>
+

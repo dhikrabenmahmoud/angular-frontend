@@ -1,1 +1,26 @@
-<p>update-actualites works!</p>
+<div class="col-md-6 offset-md-3">
+  <h3> Create Product </h3>
+  <form (ngSubmit) = "onSubmit()">
+
+    <div class="form-group">
+      <label> libAr </label>
+      <input type="text" class ="form-control" id = "libAr"
+             [(ngModel)] = "actualites.libAr" name = "libAr">
+    </div>
+
+    <div class="form-group">
+      <label> libFr</label>
+      <input type="text" class ="form-control" id = "libFr"
+             [(ngModel)] = "actualites.libFr" name = "libFr">
+    </div>
+
+    <div class="form-group">
+      <label> libAn</label>
+      <input type="text" class ="form-control" id = "libAn"
+             [(ngModel)] = "actualites.libAn" name = "libAn">
+    </div>
+
+    <button class = "btn btn-success" type ="submit">Submit</button>
+
+  </form>
+</div>
