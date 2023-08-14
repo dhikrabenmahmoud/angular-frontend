@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { ReferencesService } from '../references.service';
- @Component({
+import {ActivatedRoute} from "@angular/router";
+import {ReferencesService} from "../references.service";
+
+@Component({
   selector: 'app-details-reference',
   templateUrl: './details-reference.component.html',
   styleUrls: ['./details-reference.component.css']
@@ -30,8 +31,5 @@ export class DetailsReferenceComponent implements OnInit {
     });
 
   }
-
-
-
 
 }
