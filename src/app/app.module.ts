@@ -50,6 +50,9 @@ import { ActualitesListComponent } from './actualites-list/actualites-list.compo
 import { CreateActualitesComponent } from './create-actualites/create-actualites.component';
 import { UpdateActualitesComponent } from './update-actualites/update-actualites.component';
 import { DetailsReferenceComponent } from './details-reference/details-reference.component';
+import { DetailAboutusComponent } from './detail-aboutus/detail-aboutus.component';
+import { DetailAcceuilComponent } from './detail-acceuil/detail-acceuil.component';
+import { DetailActiviteComponent } from './detail-activite/detail-activite.component';
 
 
 
@@ -94,6 +97,9 @@ import { DetailsReferenceComponent } from './details-reference/details-reference
     CreateActualitesComponent,
     UpdateActualitesComponent,
     DetailsReferenceComponent,
+    DetailAboutusComponent,
+    DetailAcceuilComponent,
+    DetailActiviteComponent,
 
 
 

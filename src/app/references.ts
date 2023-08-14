@@ -12,6 +12,5 @@ export class References {
   updatedDate: string;
   updatedBy: string;
   isDeleted: number;
-  contentType:string;
   action: string;
 }

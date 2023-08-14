@@ -1,6 +1,10 @@
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <h2 class="text-success">About Us List</h2>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/addaboutus']">Add</button>
+  </form>
 
-
-<h2>About Us List</h2>
+</nav>
 <table class="table table-striped">
   <thead>
   <tr>
@@ -35,8 +39,8 @@
     <td>{{aboutus.updatedDate}}</td>
     <td>{{aboutus.updatedBy}}</td>
      <td>{{aboutus.action}}
-      <a mat-icon-button color="warn" [routerLink]="['/addaboutus']">
-        <mat-icon>add_box</mat-icon>
+      <a mat-icon-button color="warn" [routerLink]="['/detailsAboutUs',aboutus.id]">
+        <mat-icon>visibility</mat-icon>
       </a>
        <a mat-icon-button color="primary" (click) = "updateAboutUs(aboutus.id)">
          <mat-icon>edit</mat-icon>

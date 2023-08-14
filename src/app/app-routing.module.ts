@@ -36,6 +36,9 @@ import {ActualitesListComponent} from "./actualites-list/actualites-list.compone
 import {CreateActualitesComponent} from "./create-actualites/create-actualites.component";
 import {UpdateActualitesComponent} from "./update-actualites/update-actualites.component";
 import {DetailsReferenceComponent} from "./details-reference/details-reference.component";
+import {DetailAboutusComponent} from "./detail-aboutus/detail-aboutus.component";
+import {DetailAcceuilComponent} from "./detail-acceuil/detail-acceuil.component";
+import {DetailActiviteComponent} from "./detail-activite/detail-activite.component";
 
 
 const routes: Routes = [
@@ -77,6 +80,9 @@ const routes: Routes = [
   {path: 'addActualites', component:   CreateActualitesComponent},
   {path: 'updateActualites/:id', component:   UpdateActualitesComponent},
   {path: 'detailsReference/:id', component:   DetailsReferenceComponent},
+  {path: 'detailsAboutUs/:id', component:   DetailAboutusComponent},
+  {path: 'detailsAcceuil/:id', component:   DetailAcceuilComponent},
+  {path: 'detailsActivite/:id', component:   DetailActiviteComponent},
 
 
 

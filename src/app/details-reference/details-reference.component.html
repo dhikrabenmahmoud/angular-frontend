@@ -1,9 +1,50 @@
-<h3>View Reference Details</h3>
-<ng-container>
-  <label><b>LibAr: </b></label> {{ reference.nomAr }}
-  <label><b>LibFr:</b></label> {{ reference.nomFr }}
-  <label><b>LibAn:</b></label> {{ reference.nomAn }}
 
-  <label><b>Image:</b></label>
-  <img [src]="reference.image" width="500" height="600" alt="Reference Image">
-</ng-container>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3 class="text-primary mb-4">View Reference Details</h3>
+      <ng-container>
+        <div class="mb-3">
+          <label class="font-weight-bold">LibAr:</label> {{ reference.nomAr }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">LibFr:</label> {{ reference.nomFr }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">LibAn:</label> {{ reference.nomAn }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Image:</label>
+          <br>
+          <img [src]="reference.image" width="50" height="60" alt="Reference Image">
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Utilisateur:</label> {{ reference.utilisateur }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Operation:</label> {{ reference.operation }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Is Selected:</label> {{ reference.isSelected }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Created Date:</label> {{ reference.createdDate }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Created By:</label> {{ reference.createdBy }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Updated Date:</label> {{ reference.updatedDate }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Updated By:</label> {{ reference.updatedBy }}
+        </div>
+        <div class="mb-3">
+          <label class="font-weight-bold">Is Deleted:</label> {{ reference.isDeleted }}
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</div>
+

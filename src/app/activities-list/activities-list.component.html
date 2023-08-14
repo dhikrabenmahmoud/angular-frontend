@@ -1,6 +1,11 @@
 
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <h2 class="text-success">Activité List</h2>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/addActivity']">Add</button>
+  </form>
 
-<h2>ActivityList</h2>
+</nav>
 <table class="table table-striped">
   <thead>
   <tr>
@@ -37,8 +42,8 @@
     <td>{{activities.updatedDate}}</td>
     <td>{{activities.updatedBy}}</td>
    <td>{{activities.action}}
-         <a mat-icon-button color="warn" [routerLink]="['/addActivity']">
-          <mat-icon>add_box</mat-icon>
+         <a mat-icon-button color="warn" [routerLink]="['/detailsActivite',activities.id]">
+           <mat-icon>visibility</mat-icon>
         </a>
 
      <a mat-icon-button color="primary" (click) = "updateActivity(activities.id)">
