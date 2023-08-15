@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Contactus} from '../contactus';
-import {ContactusService} from "../contactus.service";
-import {Router} from "@angular/router";
+import {ContactusService} from '../contactus.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-create-contactus',

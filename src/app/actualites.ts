@@ -11,5 +11,6 @@ export class Actualites {
   updatedBy: string;
   isDeleted: number;
   action: string;
+  id: number;
 
 }

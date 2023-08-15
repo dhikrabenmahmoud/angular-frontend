@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Produit} from "../produit";
-import {Actualites} from "../actualites";
-import {ProduitService} from "../produit.service";
-import {Router} from "@angular/router";
-import {ActualitesService} from "../actualites.service";
+import {Actualites} from '../actualites';
+import {Router} from '@angular/router';
+import {ActualitesService} from '../actualites.service';
 
 @Component({
   selector: 'app-create-actualites',

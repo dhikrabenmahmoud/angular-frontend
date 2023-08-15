@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Statistique} from "../statistique";
-import {Router} from "@angular/router";
-import {StatistiqueService} from "../statistique.service";
+import {Statistique} from '../statistique';
+import {Router} from '@angular/router';
+import {StatistiqueService} from '../statistique.service';
 
 @Component({
   selector: 'app-statistique-list',

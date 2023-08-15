@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {DashboardComponent} from './dashboard/dashboard.component';
 import {HomeComponent} from './home/home.component';
 import {ProduitListComponent} from './produit-list/produit-list.component';
 import {CreateProductComponent} from './create-product/create-product.component';
@@ -39,6 +38,13 @@ import {DetailsReferenceComponent} from "./details-reference/details-reference.c
 import {DetailAboutusComponent} from "./detail-aboutus/detail-aboutus.component";
 import {DetailAcceuilComponent} from "./detail-acceuil/detail-acceuil.component";
 import {DetailActiviteComponent} from "./detail-activite/detail-activite.component";
+import {DetailActualiteComponent} from "./detail-actualite/detail-actualite.component";
+import {DetailContactinfoComponent} from "./detail-contactinfo/detail-contactinfo.component";
+import {DetailContactusComponent} from "./detail-contactus/detail-contactus.component";
+import {DetailDiagnosticComponent} from "./detail-diagnostic/detail-diagnostic.component";
+import {DetailExpertiseComponent} from "./detail-expertise/detail-expertise.component";
+import {DetailStatistiqueComponent} from "./detail-statistique/detail-statistique.component";
+import {DetailProductComponent} from "./detail-product/detail-product.component";
 
 
 const routes: Routes = [
@@ -46,8 +52,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
    {path: 'home', component: HomeComponent},
   {path: 'produitList', component: ProduitListComponent},
-  {path: 'dashboard', component: DashboardComponent},
-  {path: 'addProduct', component: CreateProductComponent},
+   {path: 'addProduct', component: CreateProductComponent},
   {path: 'updateProduct/:id', component:  UpdateProductComponent},
   {path: 'referencesList', component:  ReferencesListComponent},
   {path: 'addreferences', component:   CreateReferencesComponent},
@@ -83,6 +88,12 @@ const routes: Routes = [
   {path: 'detailsAboutUs/:id', component:   DetailAboutusComponent},
   {path: 'detailsAcceuil/:id', component:   DetailAcceuilComponent},
   {path: 'detailsActivite/:id', component:   DetailActiviteComponent},
+  {path: 'detailsActualite/:id', component:   DetailActualiteComponent},
+  {path: 'detailsContactus/:id', component:   DetailContactusComponent},
+  {path: 'detailsDiagnostic/:id', component:   DetailDiagnosticComponent},
+  {path: 'detailsExpertise/:id', component:   DetailExpertiseComponent},
+  {path: 'detailsStatistique/:id', component:   DetailStatistiqueComponent},
+  {path: 'detailsProduct/:id', component:   DetailProductComponent},
 
 
 

@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Produit} from "../produit";
-import {Activities} from "../activities";
-import {ProduitService} from "../produit.service";
-import {ActivatedRoute, Router} from "@angular/router";
-import {ActivitiesService} from "../activities.service";
+import {Activities} from '../activities';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ActivitiesService} from '../activities.service';
 
 @Component({
   selector: 'app-update-activities',

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Aboutus} from "../aboutus";
-import {ActivatedRoute, Router} from "@angular/router";
-import {AboutusService} from "../aboutus.service";
+import {Aboutus} from '../aboutus';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AboutusService} from '../aboutus.service';
 
 @Component({
   selector: 'app-update-aboutus',

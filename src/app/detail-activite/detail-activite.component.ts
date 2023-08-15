@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {AcceuilService} from "../acceuil.service";
-import {ActivitiesService} from "../activities.service";
-import {Acceuil} from "../acceuil";
+import {ActivatedRoute} from '@angular/router';
+import {ActivitiesService} from '../activities.service';
+import {Acceuil} from '../acceuil';
 
 @Component({
   selector: 'app-detail-activite',

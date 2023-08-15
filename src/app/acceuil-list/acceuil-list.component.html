@@ -1,11 +1,9 @@
 
-
 <nav class="navbar navbar-light bg-light justify-content-between">
   <h2 class="text-success">Acceuil List</h2>
   <form class="form-inline">
     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/addAcceuil']">Add</button>
   </form>
-
 </nav>
 <table class="table table-striped">
   <thead>
@@ -22,8 +20,6 @@
     <th>updatedDate</th>
     <th>updatedBy</th>
     <th>Action</th>
-
-
   </tr>
   </thead>
   <tbody>
@@ -43,20 +39,13 @@
        <a mat-icon-button color="warn" [routerLink]="['/detailsAcceuil',acceuil.id]">
          <mat-icon>visibility</mat-icon>
        </a>
-
       <a mat-icon-button color="primary" (click) = "updateAcceuil(acceuil.id)">
         <mat-icon>edit</mat-icon>
       </a>
        <a mat-icon-button color="warn" (click) = "deleteAcceuil(acceuil.id)" >
          <mat-icon>delete</mat-icon>
        </a>
-
      </td>
-
-
-
-
-
   </tr>
   </tbody>
 </table>

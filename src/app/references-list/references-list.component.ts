@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {References} from '../references';
- // import {Router} from "@angular/router";
 import {ReferencesService} from '../references.service';
 import {Router} from '@angular/router';
 

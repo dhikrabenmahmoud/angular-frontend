@@ -1,6 +1,9 @@
-
-
-<h2>Product List</h2>
+<nav class="navbar navbar-light bg-light justify-content-between">
+  <h2 class="text-success">Expertise List</h2>
+  <form class="form-inline">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" [routerLink]="['/addExpertise']">Add</button>
+  </form>
+</nav>
 <table class="table table-striped">
   <thead>
   <tr>
@@ -16,9 +19,6 @@
     <th>updatedDate</th>
     <th>updatedBy</th>
     <th>Action</th>
-
-
-
   </tr>
   </thead>
   <tbody>
@@ -35,8 +35,8 @@
     <td>{{expertise.updatedDate}}</td>
     <td>{{expertise.updatedBy}}</td>
     <td>{{expertise.action}}
-      <a mat-icon-button color="warn" [routerLink]="['/addExpertise']">
-        <mat-icon>add_box</mat-icon>
+      <a mat-icon-button color="warn" [routerLink]="['/detailsExpertise',expertise.id]">
+        <mat-icon>visibility</mat-icon>
       </a>
       <a mat-icon-button color="primary" (click) = "updateExpertise(expertise.id)">
         <mat-icon>edit</mat-icon>

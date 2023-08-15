@@ -42,7 +42,7 @@ export class CreateReferencesComponent implements OnInit {
           reader.onload = (event: any) => {
             console.log(event.target);
             this.references.image = event.target.result;
-          }
+          };
 
 
       }

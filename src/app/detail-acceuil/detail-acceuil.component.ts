@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {AboutusService} from "../aboutus.service";
-import {AcceuilService} from "../acceuil.service";
-import {Aboutus} from "../aboutus";
-import {Acceuil} from "../acceuil";
+import {ActivatedRoute} from '@angular/router';
+import {AcceuilService} from '../acceuil.service';
+import {Acceuil} from '../acceuil';
 
 @Component({
   selector: 'app-detail-acceuil',

@@ -6,7 +6,6 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
-import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { AppComponent } from './app.component';
 import { ProduitListComponent } from './produit-list/produit-list.component';
@@ -15,7 +14,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './header/header.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import {MatTableModule} from '@angular/material/table';
 import {FormsModule} from '@angular/forms';
 import { UpdateProductComponent } from './update-product/update-product.component';
@@ -53,6 +51,13 @@ import { DetailsReferenceComponent } from './details-reference/details-reference
 import { DetailAboutusComponent } from './detail-aboutus/detail-aboutus.component';
 import { DetailAcceuilComponent } from './detail-acceuil/detail-acceuil.component';
 import { DetailActiviteComponent } from './detail-activite/detail-activite.component';
+import { DetailActualiteComponent } from './detail-actualite/detail-actualite.component';
+import { DetailContactinfoComponent } from './detail-contactinfo/detail-contactinfo.component';
+import { DetailContactusComponent } from './detail-contactus/detail-contactus.component';
+import { DetailDiagnosticComponent } from './detail-diagnostic/detail-diagnostic.component';
+import { DetailExpertiseComponent } from './detail-expertise/detail-expertise.component';
+import { DetailStatistiqueComponent } from './detail-statistique/detail-statistique.component';
+import { DetailProductComponent } from './detail-product/detail-product.component';
 
 
 
@@ -64,7 +69,6 @@ import { DetailActiviteComponent } from './detail-activite/detail-activite.compo
     HeaderComponent,
     SidenavComponent,
     HomeComponent,
-    DashboardComponent,
     UpdateProductComponent,
     ReferencesListComponent,
     CreateReferencesComponent,
@@ -100,6 +104,13 @@ import { DetailActiviteComponent } from './detail-activite/detail-activite.compo
     DetailAboutusComponent,
     DetailAcceuilComponent,
     DetailActiviteComponent,
+    DetailActualiteComponent,
+    DetailContactinfoComponent,
+    DetailContactusComponent,
+    DetailDiagnosticComponent,
+    DetailExpertiseComponent,
+    DetailStatistiqueComponent,
+    DetailProductComponent,
 
 
 

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Actualites} from "../actualites";
-import {Router} from "@angular/router";
-import {ActualitesService} from "../actualites.service";
+import {Actualites} from '../actualites';
+import {Router} from '@angular/router';
+import {ActualitesService} from '../actualites.service';
 
 @Component({
   selector: 'app-actualites-list',
@@ -9,6 +9,7 @@ import {ActualitesService} from "../actualites.service";
   styleUrls: ['./actualites-list.component.css']
 })
 export class ActualitesListComponent implements OnInit {
+  id: number;
   actualites: Actualites[];
   constructor(private actualitesService: ActualitesService, private router: Router) { }
 

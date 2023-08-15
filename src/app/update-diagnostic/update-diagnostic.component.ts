@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Produit} from "../produit";
-import {Diagnostic} from "../diagnostic";
-import {ProduitService} from "../produit.service";
-import {ActivatedRoute, Router} from "@angular/router";
-import {DiagnosticService} from "../diagnostic.service";
+import {Diagnostic} from '../diagnostic';
+import {ActivatedRoute, Router} from '@angular/router';
+import {DiagnosticService} from '../diagnostic.service';
 
 @Component({
   selector: 'app-update-diagnostic',

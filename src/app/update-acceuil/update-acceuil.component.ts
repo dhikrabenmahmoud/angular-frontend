@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Produit} from "../produit";
-import {Acceuil} from "../acceuil";
-import {ProduitService} from "../produit.service";
-import {ActivatedRoute, Router} from "@angular/router";
-import {AcceuilService} from "../acceuil.service";
+import {Acceuil} from '../acceuil';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AcceuilService} from '../acceuil.service';
 
 @Component({
   selector: 'app-update-acceuil',

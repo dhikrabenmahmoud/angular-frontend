@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Expertise} from "../expertise";
-import {ActivatedRoute, Router} from "@angular/router";
-import {ExpertiseService} from "../expertise.service";
+import {Expertise} from '../expertise';
+import {ActivatedRoute, Router} from '@angular/router';
+import {ExpertiseService} from '../expertise.service';
 
 @Component({
   selector: 'app-update-expertise',
